@@ -97,8 +97,12 @@ namespace FormsTestDelete
 
             if (usuarioValido == true)
             {
-                MessageBox.Show("Se encontró el usuario.");
+                //MessageBox.Show("Se encontró el usuario.");
                 //Console.WriteLine("Se encontró el usuario.");
+
+                // Llamamos a otro formuario y se envia la variable usuario:
+                Form formularioPrincipal = new FormHome(usuario);
+                formularioPrincipal.Show();
             }
             else
             {
