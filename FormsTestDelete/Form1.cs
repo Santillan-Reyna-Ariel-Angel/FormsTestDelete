@@ -101,7 +101,7 @@ namespace FormsTestDelete
                 //Console.WriteLine("Se encontró el usuario.");
 
                 // Llamamos a otro formuario y se envia la variable usuario:
-                Form formularioPrincipal = new FormHome(usuario);
+                Form formularioPrincipal = new FormHome(usuario, usuarioId);
                 formularioPrincipal.Show();
             }
             else
